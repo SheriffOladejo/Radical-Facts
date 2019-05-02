@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.juicebox.amazingfacts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/radical_facts"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ComputerActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".InternetActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CarActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".BrainActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Favorite" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MovieActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".launcheractivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AnimalsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TechActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FoodActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EarthActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OceanActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MarijuanaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SportActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MathsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SleepActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WeirdActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
